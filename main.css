@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #313131;
+    color: #FFF;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 4em;
+}
+
+p.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    background: #4A4A4A;
+    width: 30%;
+    border-radius: 50px;
+    padding: 0.8%;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navicon {
+    width: 5%;
+    padding: 1%;
+}
+
+.logo {
+    width: 12%;
+    display: block;
+    margin: auto;
+    padding: 1%;
+}
+
+nav {
+    background: #313131;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 5;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+footer img {
+    width: 6%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+footer p {
+    float: left;
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 1.5%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #313131;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #FFF; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #efefef; 
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col {
+	width: 20%;
+	padding: 20px;
+	display: inline-block;
+    margin-left: 18%;
+}
+
+
+
+
+
+/* Input CSS */
+
+input[type="number"], input[type="text"] {
+    color: #FFF;
+    background: #313131;
+    border: 0;
+    border-bottom: 2px solid #646464;
+    outline: 0;
+    appearance: textfield;
+}
+
+
+#total,#ttip,#tppl,#total-loan,#tInt,#tMonth,#y1,#y2,#y3,#y4,#y5 {
+    border: 0;
+    padding-bottom: 2px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"], input[type="text"] {
+    -moz-appearance: textfield;
+    font-size: 1.5em;
+}
+
+.dollar {
+	display:inline-block;
+	position: relative;
+    z-index: 1;
+}
+.dollar input{
+	padding-left:15px;
+}
+.dollar:before {
+	position: absolute;
+    content:"$";
+    left:-2px;
+    bottom: 0.2px;
+    font-size: 1.5em;
+}
+
+.percent {
+	display:inline-block;
+	position: relative;
+    z-index: 1;
+}
+.percent input{
+	padding-left:15px;
+}
+.percent:before {
+	position: absolute;
+    content:"%";
+    right:70%;
+    bottom: 0.2px;
+    font-size: 1.5em;
+}
+
+label {
+    color: #646464;
+    font-size: 1.5em;
+}

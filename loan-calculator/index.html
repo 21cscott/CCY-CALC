@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <script src="../main.js"></script>
+        <title>CCY CALC</title>
+    </head>
+    <body>
+        <nav style="display: none" id="nav">
+            <a href="/">Home <br></a>
+            <a href="../bill-splitter">Bill Splitter <br></a>
+            <a href="../loan-calculator">Loan Calculator <br></a>
+            <a href="../savings-calculator">Savings Calculator <br></a>
+        </nav>
+        <img src="../nav.png" onclick="nav()" class="navicon" alt="navigation icon">
+        <p class="title">Loan Calculator</p>
+        
+        <div class="col">
+            <label>Loan Amount</label>
+            <br>
+            <div class="dollar"><input type="number" id="loan" name="loan" oninput="loan()" /></div><br>
+            <label>Interest Rate</label>
+            <br>
+            <div class="percent"><input type="number" id="interest" name="interest" oninput="loan()" /></div> <br>
+            <label>Loan Term (Months)</label>
+            <br>
+            <input type="number" id="term" name="term" oninput="loan()" />
+            <br>
+        </div>
+        <div class="col">
+            <label>Total</label>
+            <br>
+            <div class="dollar"><input type="text" id="total-loan" name="total-loan" readonly/></div> <br>
+            <label>Total Interest</label>
+            <br>
+            <div class="dollar"><input type="text" id="tInt" name="tInt" readonly/></div> <br>
+            <label>Total / Month</label>
+            <br>
+            <div class="dollar"><input type="text" id="tMonth" name="tMonth" readonly/></div> <br>
+        </div>
+        <footer>
+            <a href="/"><img src="../logo.png" alt="logo">
+                <p>CCY CALC</p></a>
+        </footer>
+    </body>
+</html>

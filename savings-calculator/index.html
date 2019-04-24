@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <script src="../main.js"></script>
+        <title>CCY CALC</title>
+    </head>
+    <body>
+        <nav style="display: none" id="nav">
+            <a href="/">Home <br></a>
+            <a href="../bill-splitter">Bill Splitter <br></a>
+            <a href="../loan-calculator">Loan Calculator <br></a>
+            <a href="../savings-calculator">Savings Calculator <br></a>
+        </nav>
+        <img src="../nav.png" onclick="nav()" class="navicon" alt="navigation icon">
+        <p class="title">Savings Calculator</p>
+        <div id="container">
+            <div class="col">
+                <label>Initial Amount</label>
+                <br>
+                <div class="dollar"><input type="number" id="intAmm" name="intAmm" oninput="save()" /></div> <br>
+                <label>Annual Interest (Compounded)</label>
+                <br>
+                <div class="percent"><input type="number" id="annInt" name="AnnInterest" oninput="save()"/></div> <br>
+                <label>Monthly Deposit</label>
+                <br>
+                <div class="dollar"><input type="number" id="moDep" name="moDep" oninput="save()"/></div>
+            </div>
+            <div class="col">
+                <label>Total (Year 1)</label>
+                <br>
+                <div class="dollar"><input type="text" id="y1" name="y1" readonly/></div>
+                <br>
+                <label>Total (Year 2)</label>
+                <br>
+                <div class="dollar"><input type="text" id="y2" name="y2" readonly/></div>
+                <br>
+                <label>Total (Year 3)</label>
+                <br>
+                <div class="dollar"><input type="text" id="y3" name="y3" readonly/></div>
+                <br>
+                <label>Total (Year 4)</label>
+                <br>
+                <div class="dollar"><input type="text" id="y4" name="y4" readonly/></div>
+                <br>
+                <label>Total (Year 5)</label>
+                <br>
+                <div class="dollar"><input type="text" id="y5" name="y5" readonly/></div>
+                <br>
+            </div>
+        </div>
+        <footer>
+            <a href="/"><img src="../logo.png" alt="logo">
+                <p>CCY CALC</p></a>
+        </footer>
+    </body>
+</html>

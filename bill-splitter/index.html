@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <script src="../main.js"></script>
+        <title>CCY CALC</title>
+    </head>
+    <body>
+        <nav style="display: none" id="nav">
+            <a href="/">Home <br></a>
+            <a href="../bill-splitter">Bill Splitter <br></a>
+            <a href="../loan-calculator">Loan Calculator <br></a>
+            <a href="../savings-calculator">Savings Calculator <br></a>
+        </nav>
+        <img src="../nav.png" onclick="nav()" class="navicon" alt="navigation icon">
+        <p class="title">Bill Splitter</p>
+        
+        <div class="col">
+            <label>Bill</label>
+            <br>
+            <div class="dollar"><input type="number" id="bill" name="bill" oninput="split()"/></div> <br>
+            <label>Tip</label>
+            <br>
+            <div class="percent"><input type="number" id="tip" name="tip" oninput="split()" /></div> <br>
+            <label>Amount of People</label>
+            <br>
+            <input type="number" id="people" name="people" oninput="split()" />
+            <br>
+        </div>
+        <div class="col">
+            <label>Total Bill</label>
+            <br>
+            <div class="dollar"><input type="number" id="total" name="total" readonly /></div> <br>
+            <label>Total Tip</label>
+            <br>
+            <div class="dollar"><input type="number" id="ttip" name="ttip" readonly /></div> <br>
+            <label>Total / Person</label>
+            <br>
+            <div class="dollar"><input type="number" id="tppl" name="tppl" oninput="split()" readonly /></div> <br>
+        </div>
+        <footer>
+            <a href="/"><img src="../logo.png" alt="logo">
+                <p>CCY CALC</p></a>
+        </footer>
+    </body>
+</html>
